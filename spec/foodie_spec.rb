@@ -14,4 +14,8 @@ describe Foodie::Food do
   it "anything else is delicious" do
     expect(Foodie::Food.portray "Poop").to eql("Delicious!")
   end
+
+  it "pluralizes a word" do
+    expect(Foodie::Food.pluralize("Tomato")).to eql("Tomatoes")
+  end
 end
